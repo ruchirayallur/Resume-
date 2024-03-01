@@ -1,14 +1,182 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #537b87;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #e1e5e4;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(181, 95, 129, 0.1);
+        }
+        h1, h2, h3 {
+            color: #cc5050;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .contact {
+            margin-bottom: 20px;
+        }
+        .work, .education {
+            margin-bottom: 30px;
+        }
+        .skills li {
+            cursor: pointer;
+            color: rgb(12, 12, 247);
+            text-decoration: underline;
+        }
+        .additional-info {
+            border-top: 2px solid #296564;
+            padding-top: 20px;
+        }
+        .image-partition {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .image-partition img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+    <script>
+        // JavaScript function to display detailed skill descriptions
+        function showMessage(skill) {
+            let description = '';
+            switch(skill) {
+                case 'HTML':
+                    description = 'HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications.';
+                    break;
+                case 'CSS':
+                    description = 'CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.';
+                    break;
+                case 'JavaScript':
+                    description = 'JavaScript is a programming language that enables interactive web pages and is essential for front-end and back-end web development.';
+                    break;
+                case 'Java':
+                    description = 'Java is a popular programming language used for building enterprise-scale applications, web servers, mobile applications, and more.';
+                    break;
+                case 'Python':
+                    description = 'Python is a high-level programming language known for its simplicity and readability, making it ideal for beginners and experienced programmers alike.';
+                    break;
+                case 'SQL':
+                    description = 'SQL (Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).';
+                    break;
+                case 'Git':
+                    description = 'Git is a distributed version control system used to track changes in source code during software development.';
+                    break;
+                default:
+                    description = 'Skill description not available.';
+            }
+            alert(description);
+        }
+
+        // JavaScript function to open links in a new tab
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</head>
 <body>
-    <h1>Ruchira</h1>
-    <h2>Education</h2>
-    <p>Class 10 : Passed </p>
-    <p>Class 12 : Passed </p>
-    <em>Courses</em>
-    <p><b>Internet Technologies</b></p>
-    <h3>Hobbies</h3>
-    <p><i>Not Sleeping,</i></p>
-    <a href="https://github.com/ruchirayallur">
-        <img src="Computer Icons GitHub Icon Design Logo PNG - Free Download.jpg" width="50" height="40"
-    </body>
+    <div class="container">
+        <header>
+            <div class="image-partition">
+                <img src="no-profile-picture.jpg" alt="Ruchira Yallur">
+            </div>
+            <h2>Ruchira ramesh yallur</h2>
+            <p class="contact">123 Patel Layout,Banglore,Karnataka, ZIP | (123) 456-7890 | ruchirayallur@gmail.com | </p>
+            <hr> <!-- Partition after contact details -->
+        </header>
+        <section class="objective">
+            <h2>Career Objective</h2>
+            <p>I am a dedicated and passionate software developer with a strong foundation in web development technologies. I am seeking a challenging position in a reputable organization where I can utilize my skills and knowledge to contribute to the development of innovative software solutions.</p>
+            <hr> <!-- Partition after career objective -->
+        </section>
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>A results-driven and motivated software developer with experience in developing and maintaining web applications. 
+                Strong problem-solving abilities with a keen interest in learning new technologies and frameworks.
+                Results-driven and innovative software engineer with over [X years] of experience in full-stack web development. 
+                Proficient in a wide range of programming languages and technologies, including JavaScript, Python, HTML/CSS, and SQL.
+                 Experienced in developing scalable and robust web applications from conception to deployment.
+                  Skilled in collaborating with cross-functional teams to deliver high-quality software solutions that meet client requirements and exceed expectations.
+                   Adept at problem-solving and troubleshooting complex technical issues to ensure optimal performance and user experience. 
+                Passionate about staying updated with the latest industry trends and technologies to continuously enhance skills and contribute to cutting-edge projects.</p>
+            <hr> <!-- Partition after professional summary -->
+        </section>
+        <section class="Job responsibility">
+            <h2>Job Responsibility</h2>
+            <p>Software Developer Responsibilities:
+
+                Participated in agile software development processes, including sprint planning, daily stand-ups, and retrospectives.
+                Developed and maintained responsive web applications using modern front-end technologies such as HTML5, CSS3, and JavaScript frameworks like React.js.
+                Implemented user interface designs provided by UX/UI designers, ensuring pixel-perfect rendering across different browsers and devices.
+                Integrated RESTful APIs and backend services using technologies such as Node.js, Express.js, and MongoDB for data storage and retrieval.
+                Collaborated with product managers and stakeholders to gather and refine requirements, translating them into technical specifications and actionable tasks.
+                Conducted code reviews to ensure adherence to coding standards, best practices, and scalability requirements.   </p>
+            <hr> <!-- Partition after job res -->
+        </section>
+        <section class="summary of professional experience">
+            <h2> Summary of Professional Experience</h2>
+            <p>
+
+            </p>
+            <hr> <!-- Partition after pe -->
+        </section>
+        <section class="work">
+            <h2>Work Experience</h2>
+            <ul>
+            <li>Participated in code reviews and provided constructive feedback to team members.</li>
+        <li>Resolved technical issues and bugs reported by clients and internal stakeholders.</li>
+        <li>Contributed to the design and architecture of new features and enhancements.</li>
+        </ul> 
+        <hr> <!-- Partition after wrk exp--->
+            <h2>Software Developer</h2>
+            <p><strong>Company Name</strong>, Infosys, Telangana | March 2027 - Present</p>
+            <ul>
+                <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+                <li>Collaborated with cross-functional teams to deliver high-quality software products.</li>
+                <li>Implemented responsive design principles to ensure compatibility across various devices.</li>
+            </ul>
+            <hr> <!-- Partition after se--->
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p><strong>Dayanand Sagar University</strong>, Banglore, karnataka  | Graduation Year -2025</p>
+            <hr> <!-- Partition after edu--->
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li onclick="showMessage('HTML')">HTML</li>
+                <li onclick="showMessage('CSS')">CSS</li>
+                <li onclick="showMessage('JavaScript')">JavaScript</li>
+                <li onclick="showMessage('Java')">Java</li>
+                <li onclick="showMessage('Python')">Python</li>
+                <li onclick="showMessage('SQL')">SQL</li>
+                <li onclick="showMessage('Git')">Git</li>
+            </ul>
+           
+        </section>
+        <section class="additional-info">
+            <h2>Additional Information</h2>
+            <p>I am a dedicated and passionate software developer with a strong foundation in web development technologies.
+                 I have a keen interest in learning new technologies and frameworks to stay updated with industry trends. 
+                Outside of work, I enjoy participating in hackathons and contributing to open-source projects.</p>
+        </section>
+    </div>
+</body>
 </html>
