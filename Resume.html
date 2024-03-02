@@ -19,6 +19,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(181, 95, 129, 0.1);
+            
         }
         h1, h2, h3 {
             color: #cc5050;
@@ -29,10 +30,13 @@
         .contact {
             margin-bottom: 20px;
         }
-        .work, .education {
+        .work {
             margin-bottom: 30px;
         }
         .skills li {
+            display: inline-block;
+    margin-right: 20px; /* Adjust spacing between skills */
+    margin-bottom: 10px; /* Adjust spacing between rows */
             cursor: pointer;
             color: rgb(12, 12, 247);
             text-decoration: underline;
@@ -50,6 +54,24 @@
             width: 150px;
             height: 150px;
         }
+        .leadership-skills {
+    margin-bottom: 30px;
+}
+
+.leadership-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leadership-list li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between skills */
+    margin-bottom: 10px; /* Adjust spacing between rows */
+    cursor: pointer;
+    color: rgb(12, 12, 247);
+    text-decoration: underline;
+}
+
     </style>
     <script>
         // JavaScript function to display detailed skill descriptions
@@ -57,25 +79,25 @@
             let description = '';
             switch(skill) {
                 case 'HTML':
-                    description = 'HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications.';
+                    description = 'HTML, which stands for Hypertext Markup Language, is the standard markup language used for creating web pages and web applications. It provides the structure and content of a web page by using a system of tags and attributes to define various elements.';
                     break;
                 case 'CSS':
-                    description = 'CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.';
+                    description = 'CSS, or Cascading Style Sheets, is a stylesheet language used to define the presentation and layout of HTML documents. It allows web developers to style and format the elements of a webpage, making it visually appealing and improving the user experience.';
                     break;
                 case 'JavaScript':
-                    description = 'JavaScript is a programming language that enables interactive web pages and is essential for front-end and back-end web development.';
+                    description = 'JavaScript is a programming language that enables interactive web pages and is essential for front-end and back-end web development.is a versatile and powerful programming language primarily used for building interactive and dynamic web pages';
                     break;
                 case 'Java':
                     description = 'Java is a popular programming language used for building enterprise-scale applications, web servers, mobile applications, and more.';
                     break;
                 case 'Python':
-                    description = 'Python is a high-level programming language known for its simplicity and readability, making it ideal for beginners and experienced programmers alike.';
+                    description = 'Python is a high-level programming language known for its simplicity and readability, making it ideal for beginners and experienced programmers alike.has grown to become one of the most popular programming languages worldwide.';
                     break;
                 case 'SQL':
-                    description = 'SQL (Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).';
+                    description = 'SQL (Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS),is a powerful and widely used language in the field of database management and data manipulation, and it is supported by most relational database systems such as MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, and SQLite.';
                     break;
                 case 'Git':
-                    description = 'Git is a distributed version control system used to track changes in source code during software development.';
+                    description = 'Git is a distributed version control system used to track changes in source code during software development,is a powerful and flexible tool for version control that plays a central role in modern software development practices, enabling collaboration, code management, and project organization.';
                     break;
                 default:
                     description = 'Skill description not available.';
@@ -89,6 +111,7 @@
         }
     </script>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -130,8 +153,10 @@
         </section>
         <section class="summary of professional experience">
             <h2> Summary of Professional Experience</h2>
-            <p>
-
+            <p>Highly motivated and results-oriented software developer with a proven track record of success in full-stack web development. 
+                Proficient in Agile methodologies and experienced in collaborating with cross-functional teams to deliver high-quality software solutions. 
+                Skilled in developing responsive web applications using modern front-end technologies and integrating with backend services to ensure optimal performance and user experience. 
+                Adept at problem-solving and troubleshooting complex technical issues, with a strong commitment to continuous learning and professional growth.
             </p>
             <hr> <!-- Partition after pe -->
         </section>
@@ -142,23 +167,52 @@
         <li>Resolved technical issues and bugs reported by clients and internal stakeholders.</li>
         <li>Contributed to the design and architecture of new features and enhancements.</li>
         </ul> 
-        <hr> <!-- Partition after wrk exp--->
-            <h2>Software Developer</h2>
-            <p><strong>Company Name</strong>, Infosys, Telangana | March 2027 - Present</p>
+            <h3>Software Developer</h3>
+            <p><strong>Company--></strong>Infosys, Telangana | March 2027 - Present</p>
             <ul>
                 <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
                 <li>Collaborated with cross-functional teams to deliver high-quality software products.</li>
                 <li>Implemented responsive design principles to ensure compatibility across various devices.</li>
             </ul>
-            <hr> <!-- Partition after se--->
         </section>
+        <h3>Frontend Developer</h3>
+    <p><strong>Company:</strong> XYZ Solutions, Bangalore | June 2025 - February 2027</p>
+    <ul>
+        <li>Designed and implemented user-friendly interfaces for web applications using HTML, CSS, and JavaScript frameworks like React.js.</li>
+        <li>Worked closely with UI/UX designers to translate design mockups into interactive and visually appealing web pages.</li>
+        <li>Optimized web application performance through efficient code implementation and browser compatibility testing.</li>
+    </ul>
+    <h3>Software Engineering Intern</h3>
+    <p><strong>Company:</strong> ABC Tech, Pune | Summer 2024</p>
+    <ul>
+        <li>Assisted in the development and testing of new features for the company's flagship product.</li>
+        <li>Participated in daily stand-up meetings and provided progress updates on assigned tasks.</li>
+        <li>Gained hands-on experience with software development lifecycle processes and Agile methodologies.</li>
+    </ul>
+</section>
+<hr> <!-- Partition after edu--->
         <section class="education">
             <h2>Education</h2>
             <h3>Bachelor of Science in Computer Science</h3>
             <p><strong>Dayanand Sagar University</strong>, Banglore, karnataka  | Graduation Year -2025</p>
-            <hr> <!-- Partition after edu--->
+            <ul>
+                <li>Completed coursework in data structures, algorithms, software engineering, and database management.</li>
+                <li>Participated in various coding competitions and hackathons, showcasing problem-solving skills and creativity.</li>
+                <li>Completed a final-year project on the development of a web-based e-commerce platform, demonstrating proficiency in full-stack development.</li>
+                <li>Active member of the Computer Science Club, organizing workshops and seminars to enhance technical knowledge among peers.</li>
+            </ul>
+            <hr> <!-- Partition after bachelor's degree -->
+            <h3>High School Diploma</h3>
+            <p><strong>St. Mary's School</strong>, Bangalore, Karnataka | Graduation Year: 2021</p>
+            <ul>
+                <li>Completed secondary education with a focus on mathematics, science, and computer science.</li>
+                <li>Achieved top grades in computer science subjects and participated in various extracurricular activities.</li>
+                <li>Recipient of the "Best Student in Computer Science" award for academic excellence and leadership skills.</li>
+            </ul>
         </section>
+            <hr> <!-- Partition after edu--->
         <section class="skills">
+            <ul class="skill-list"></ul>
             <h2>Skills</h2>
             <ul>
                 <li onclick="showMessage('HTML')">HTML</li>
@@ -169,8 +223,43 @@
                 <li onclick="showMessage('SQL')">SQL</li>
                 <li onclick="showMessage('Git')">Git</li>
             </ul>
-           
         </section>
+        <hr> <!-- Partition after skills--->
+        <section class="leadership-skills">
+            <h2>Leadership Skills</h2>
+            <ul class="leadership-list">
+                <li onclick="showMessage('Team Management')">Team Management</li>
+                <li onclick="showMessage('Communication')">Communication</li>
+                <li onclick="showMessage('Problem SolvingTML')">Problem Solving</li>
+                <li onclick="showMessage('Decision Making')">Decision Making</li>
+                <li onclick="showMessage('Strategic Planning')">Strategic Planning</li>
+            </ul>
+        </section>
+        <hr> <!-- Partition after skills-->
+        <section class="seminars-training">
+            <h2>Seminars and Training Attended</h2>
+            <p> <ul>
+                <li>Workshop on Advanced Web Development Techniques - 2023</li>
+                <li>Introduction to Machine Learning - Online Course, Coursera - 2022</li>
+                <li>Agile Methodologies Training - Infosys Training Center - 2021</li>
+                <li>Front-end Development Bootcamp - XYZ Tech Institute - 2020</li>
+            </ul></p>
+            </section>
+            <hr> <!-- Partition after Seminars and Training Attended-->
+            <section class="personal-info">
+                <h2>Personal Information</h2>
+                <ul>
+                    <li><strong>Name:</strong> Ruchira Ramesh Yallur</li>
+                    <li><strong>Address:</strong> 123 Patel Layout, Banglore, Karnataka, ZIP</li>
+                    <li><strong>Email:</strong> ruchirayallur@gmail.com</li>
+                    <li><strong>Phone:</strong> (123) 456-7890</li>
+                    <li><strong>Date of Birth:</strong> January 1, 1990</li>
+                    <li><strong>Nationality:</strong> Indian</li>
+                    <li><strong>Marital Status:</strong> Single</li>
+                    <li><strong>Languages:</strong> English (Fluent), Hindi (Native)</li>
+                </ul>
+                <hr> <!-- Partition after personal information -->
+            </section>
         <section class="additional-info">
             <h2>Additional Information</h2>
             <p>I am a dedicated and passionate software developer with a strong foundation in web development technologies.
