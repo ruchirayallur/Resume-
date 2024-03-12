@@ -10,7 +10,7 @@
             line-height: 1.6;
             margin: 20px;
             padding: 20px;
-            background-color: #537b87;
+            background-color: #d8dcde;
         }
         .container {
             max-width: 800px;
@@ -73,6 +73,7 @@
 }
 
     </style>
+    
     <script>
         // JavaScript function to display detailed skill descriptions
         function showMessage(skill) {
@@ -101,12 +102,17 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="resume.css">
     <div class="container">
+        <section class="container">
+            
+        </section>
         <header>
             <div class="image-partition">
                 <img src="no-profile-picture.jpg" alt="Ruchira Yallur">
             </div>
-            <h2>Ruchira ramesh yallur</h2>
+            <div class="option"><h2>Ruchira ramesh yallur</h2></div>
+           
             <p class="contact">123 Patel Layout,Banglore,Karnataka, ZIP | (123) 456-7890 | ruchirayallur@gmail.com | </p>
             <hr> <!-- Partition after contact details -->
         </header>
@@ -118,7 +124,7 @@
         </section>
 <hr> <!-- Partition after edu--->
         <section class="education">
-            <h2>Education</h2>
+            <h2><div class="cell dotted centerFlex">Education</div></h2>
             <h3>Bachelor of Science in Computer Science</h3>
             <p><strong>Dayanand Sagar University</strong>, Banglore, karnataka  | Graduation Year -2025</p>
             <ul>
@@ -128,7 +134,7 @@
                 <li>Active member of the Computer Science Club,  enhance technical knowledge among peers.</li>
             </ul>
             <hr> <!-- Partition after bachelor's degree -->
-            <h3>High School </h3>
+            <h3><div class="cell dotted centerFlex">High School</div> </h3>
             <p><strong>SSIS School</strong>, Bangalore, Karnataka | Graduation Year: 2021</p>
             <ul>
                 <li>Completed secondary education with a focus on mathematics, science, and computer science.</li>
@@ -139,7 +145,7 @@
             <hr> <!-- Partition after edu--->
         <section class="skills">
             <ul class="skill-list"></ul>
-            <h2>Skills</h2>
+            <h2><div class="cell dotted centerFlex"> Skills</div></h2>
             <ul>
                 <li onclick="showMessage('HTML')">HTML</li>
                 <li onclick="showMessage('Java')">Java</li>
@@ -148,7 +154,7 @@
         </section>
         <hr> <!-- Partition after skills--->
         <section class="leadership-skills">
-            <h2>Leadership Skills</h2>
+            <h2><div class="cell dotted centerFlex">Leadership Skills</div></h2>
             <ul class="leadership-list">
                 <li onclick="showMessage('Team Management')">Team Management</li>
                 <li onclick="showMessage('Communication')">Communication</li>
@@ -158,21 +164,9 @@
             </ul>
         </section>
         <hr> <!-- Partition after skills-->
-            <section class="personal-info">
-                <h2>Personal Information</h2>
-                <ul>
-                    <li><strong>Name:</strong> Ruchira Ramesh Yallur</li>
-                    <li><strong>Address:</strong> 123 Patel Layout, Banglore, Karnataka, ZIP</li>
-                    <li><strong>Email:</strong> ruchirayallur@gmail.com</li>
-                    <li><strong>Phone:</strong> (123) 456-7890</li>
-                    <li><strong>Date of Birth:</strong> January 1, 2004</li>
-                    <li><strong>Nationality:</strong> Indian</li>
-                    <li><strong>Languages:</strong> English (Fluent), kananda(Native)</li>
-                </ul>
-                <hr> <!-- Partition after personal information -->
-            </section>
+
         <section class="additional-info">
-            <h2>Additional Information</h2>
+            <h2><div class="cell dotted centerFlex">Additional Information</div></h2>
             <p>I am a dedicated and passionate software developer with a strong foundation in web development technologies.
                  I have a keen interest in learning new technologies and frameworks to stay updated with industry trends. 
                 Outside of work, I enjoy participating in hackathons and contributing to open-source projects.</p>

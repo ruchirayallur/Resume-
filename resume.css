@@ -1,0 +1,26 @@
+.container {
+    box-sizing: border-box;
+    height: 120px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 2px solid;
+    padding: 0.5em;
+}
+.dotted {
+    border: 2px dotted red;
+}
+
